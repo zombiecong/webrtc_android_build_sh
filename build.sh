@@ -7,7 +7,7 @@ exec_ninja() {
   ninja -C $1 $WEBRTC_TARGET
 }
 
-WEBRTC_ROOT='$PWD'
+WEBRTC_ROOT="$PWD"
 WEBRTC_TARGET="AppRTCDemo"
 
 BUILD="$WEBRTC_ROOT/libjingle_peerconnection_builds"
