@@ -14,6 +14,17 @@ BUILD="$WEBRTC_ROOT/libjingle_peerconnection_builds"
 
 ANDROID_TOOLCHAINS="$WEBRTC_ROOT/src/third_party/android_tools/ndk/toolchains"
 
+
+create_directory_if_not_found() {
+	# if we cannot find the directory
+	if [ ! -d "$1" ];
+		then
+		echo "$1 directory not found, creating..."
+	    mkdir -p "$1"
+	    echo "directory created at $1"
+	fi
+}
+
 get_webrtc_revision() {
     DIR=`pwd`
     cd "$WEBRTC_ROOT/src"
