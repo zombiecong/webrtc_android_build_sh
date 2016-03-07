@@ -1,7 +1,4 @@
-
-
-
-
+# !/bin/bash
 exec_ninja() {
   echo "Running ninja"
   ninja -C $1 $WEBRTC_TARGET
