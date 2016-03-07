@@ -30,37 +30,37 @@ else
 fi
 
 if [ ! -d "ANDROIDAPP_SOURCE_PATH" ]; then
-  cp -rf "$ANDROIDAPP_SOURCE_PATH" "$WEBRTC_ANDROID_SDK_PATH/androidapp"
+	cp -rf "$ANDROIDAPP_SOURCE_PATH" "androidapp"
 else
 	echo  android app path not exist
 fi
 
 if [ ! -d "VOICE_ENGINE_SOURCE_PATH" ]; then
-  cp -rf "$VOICE_ENGINE_SOURCE_PATH" "$WEBRTC_ANDROID_SDK_PATH/"
+	cp -rf "$VOICE_ENGINE_SOURCE_PATH" "$WEBRTC_ANDROID_SDK_PATH/"
 else
 	echo  voiceengine path not exist
 fi
 
 if [ ! -d "VIDEO_ENGINE_SOURCE_PATH" ]; then
-  cp -rf "$VIDEO_ENGINE_SOURCE_PATH" "$WEBRTC_ANDROID_SDK_PATH/"
+	cp -rf "$VIDEO_ENGINE_SOURCE_PATH" "$WEBRTC_ANDROID_SDK_PATH/"
 else
 	echo  videoengine path not exist
 fi
 
 if [ ! -d "BASE_SOURCE_PATH" ]; then
-  cp -rf "$BASE_SOURCE_PATH/*" "$WEBRTC_ANDROID_SDK_PATH/"
+	echo cp -rf "$BASE_SOURCE_PATH/*" "$WEBRTC_ANDROID_SDK_PATH/"
 else
 	echo  base path not exist
 fi
 
 if [ ! -d "WEBRTC_ANDROID_API_PATH" ]; then
-  cp -rf "$WEBRTC_ANDROID_API_PATH/*" "$WEBRTC_ANDROID_SDK_PATH/"
+	echo cp -rf "$WEBRTC_ANDROID_API_PATH/*" "$WEBRTC_ANDROID_SDK_PATH/"
 else
 	echo  android api path not not exist
 fi
 
 if [ ! -d "WEBRTC_JAVA_API_PATH" ]; then
-  cp -rf "$WEBRTC_JAVA_API_PATH/*" "$WEBRTC_ANDROID_SDK_PATH/"
+	echo cp -rf "$WEBRTC_JAVA_API_PATH/*" "$WEBRTC_ANDROID_SDK_PATH/"
 else
 	echo  java api path not not exist
 fi
