@@ -30,7 +30,7 @@ else
 fi
 
 if [ ! -d "ANDROIDAPP_SOURCE_PATH" ]; then
-  cp -rf "$ANDROIDAPP_SOURCE_PATH" "$WEBRTC_ANDROID_SDK_PATH/"
+  cp -rf "$ANDROIDAPP_SOURCE_PATH" "$WEBRTC_ANDROID_SDK_PATH/androidapp"
 else
 	echo  android app path not exist
 fi
