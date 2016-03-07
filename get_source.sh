@@ -18,7 +18,7 @@ WEBRTC_JAVA_API_PATH="$WEBRTC_ROOT/src/webrtc/api/java/src/org/webrtc"
 WEBRTC_ANDROID_SDK_PATH="$WEBRTC_ROOT/sdk_src"
 
 function clean() {
-	rm -rf "$WEBRTC_ANDROID_SDK_PATH/*"
+	rm -rf "$WEBRTC_ANDROID_SDK_PATH/"*
 }
 
 clean
@@ -48,19 +48,19 @@ else
 fi
 
 if [ ! -d "BASE_SOURCE_PATH" ]; then
-	echo cp -rf "$BASE_SOURCE_PATH/*" "$WEBRTC_ANDROID_SDK_PATH/"
+	cp -rf "$BASE_SOURCE_PATH/"* "$WEBRTC_ANDROID_SDK_PATH/"
 else
 	echo  base path not exist
 fi
 
 if [ ! -d "WEBRTC_ANDROID_API_PATH" ]; then
-	echo cp -rf "$WEBRTC_ANDROID_API_PATH/*" "$WEBRTC_ANDROID_SDK_PATH/"
+	cp -rf "$WEBRTC_ANDROID_API_PATH/"* "$WEBRTC_ANDROID_SDK_PATH/"
 else
 	echo  android api path not not exist
 fi
 
 if [ ! -d "WEBRTC_JAVA_API_PATH" ]; then
-	echo cp -rf "$WEBRTC_JAVA_API_PATH/*" "$WEBRTC_ANDROID_SDK_PATH/"
+	cp -rf "$WEBRTC_JAVA_API_PATH/"* "$WEBRTC_ANDROID_SDK_PATH/"
 else
 	echo  java api path not not exist
 fi
