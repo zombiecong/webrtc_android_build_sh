@@ -195,7 +195,7 @@ prepare_gyp_defines() {
 }
 
 targz (){
-    tar -cvzf $1.tar.gz $1
+    tar -cvzf $1".tar.gz" $1
 }
 
 # Updates webrtc and builds apprtc

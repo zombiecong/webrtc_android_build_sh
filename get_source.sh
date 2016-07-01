@@ -7,6 +7,7 @@ ANDROIDAPP_SOURCE_PATH="$WEBRTC_ROOT/src/webrtc/examples/androidapp"
 
 VOICE_ENGINE_SOURCE_PATH="$WEBRTC_ROOT/src/webrtc/modules/audio_device/android/java/src/org/webrtc/voiceengine"
 
+
 BASE_SOURCE_PATH="$WEBRTC_ROOT/src/webrtc/base/java/src/org/webrtc"
 
 WEBRTC_ANDROID_API_PATH="$WEBRTC_ROOT/src/webrtc/api/java/android/org/webrtc"
@@ -38,7 +39,6 @@ if [ ! -d "VOICE_ENGINE_SOURCE_PATH" ]; then
 else
 	echo  voiceengine path not exist
 fi
-
 
 if [ ! -d "BASE_SOURCE_PATH" ]; then
 	cp -rf "$BASE_SOURCE_PATH/"*.java "$WEBRTC_ANDROID_SDK_PATH/"
