@@ -194,7 +194,9 @@ prepare_gyp_defines() {
     echo "GYP_DEFINES=$GYP_DEFINES"
 }
 
-
+targz (){
+    tar -cvzf $1.tar.gz $1
+}
 
 # Updates webrtc and builds apprtc
 build_apprtc() {
