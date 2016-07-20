@@ -7,12 +7,9 @@ ANDROIDAPP_SOURCE_PATH="$WEBRTC_ROOT/src/webrtc/examples/androidapp"
 
 VOICE_ENGINE_SOURCE_PATH="$WEBRTC_ROOT/src/webrtc/modules/audio_device/android/java/src/org/webrtc/voiceengine"
 
-
 BASE_SOURCE_PATH="$WEBRTC_ROOT/src/webrtc/base/java/src/org/webrtc"
 
-WEBRTC_ANDROID_API_PATH="$WEBRTC_ROOT/src/webrtc/api/java/android/org/webrtc"
-
-WEBRTC_JAVA_API_PATH="$WEBRTC_ROOT/src/webrtc/api/java/src/org/webrtc"
+WEBRTC_ANDROID_API_PATH="$WEBRTC_ROOT/src/webrtc/api/android/java/src/org/webrtc/"
 
 WEBRTC_ANDROID_SDK_PATH="$WEBRTC_ROOT/sdk_src"
 
@@ -51,10 +48,3 @@ if [ ! -d "WEBRTC_ANDROID_API_PATH" ]; then
 else
 	echo  android api path not not exist
 fi
-
-if [ ! -d "WEBRTC_JAVA_API_PATH" ]; then
-	cp -rf "$WEBRTC_JAVA_API_PATH/"*.java "$WEBRTC_ANDROID_SDK_PATH/"
-else
-	echo  java api path not not exist
-fi
-
